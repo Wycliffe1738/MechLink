@@ -830,6 +830,30 @@ a {
     color: #d9600e;
 }
 
+.mechanic-profile-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    background: #ffffff;
+    color: #10243d;
+    font-size: 13px;
+    font-weight: 700;
+    border: 1px solid #10243d;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: inherit;
+}
+
+.mechanic-profile-button:hover {
+    background: #f47721;
+    color: #ffffff;
+    border-color: #f47721;
+}
+
+
 .mechanic-book-button {
     display: block;
     width: 100%;
@@ -1726,5 +1750,44 @@ a {
 
     .notification-card {
         padding: 15px;
+    }
+}
+
+.mechanic-profile-card {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.mechanic-profile-card .mechanic-photo {
+    height: 320px;
+}
+
+.mechanic-profile-card .mechanic-info {
+    padding: 30px;
+}
+
+.mechanic-profile-card .mechanic-top h2 {
+    color: #10243d;
+    font-size: 24px;
+}
+
+.mechanic-profile-card .mechanic-description {
+    color: #778598;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+    .mechanic-profile-card .mechanic-photo {
+        height: 230px;
+    }
+
+    .mechanic-profile-card .mechanic-info {
+        padding: 20px;
+    }
+
+    .mechanic-profile-card .mechanic-top h2 {
+        font-size: 20px;
     }
 }

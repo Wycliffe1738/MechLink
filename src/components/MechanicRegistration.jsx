@@ -88,13 +88,27 @@ function MechanicRegistration() {
 
                     <div className="form-group">
                         <select id="mechanicSpecialty" required>
-                            <option value="">Select your specialization</option>
-                            <option value="Engine Repair">Engine Repair</option>
-                            <option value="Electrical">Electrical</option>
-                            <option value="Tyre Services">Tyre Services</option>
-                            <option value="General Repairs">General Repairs</option>
-                            <option value="Heavy Machinery">Heavy Machinery</option>
-                            <option value="Towing Services">Towing Services</option>
+                            <option
+                            value="">Select your specialization
+                            </option>
+                            <option
+                            value="Engine Repair">Engine Repair
+                            </option>
+                            <option
+                            value="Electrical">Electrical
+                            </option>
+                            <option
+                            value="Tyre Services">Tyre Services
+                            </option>
+                            <option
+                            value="General Repairs">General Repairs
+                            </option>
+                            <option
+                            value="Heavy Machinery">Heavy Machinery
+                            </option>
+                            <option
+                            value="Towing Services">Towing Services
+                            </option>
                         </select>
                     </div>
 

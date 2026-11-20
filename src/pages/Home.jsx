@@ -20,7 +20,10 @@ function Home() {
                 </span>
 
                 <h1>
-                    Broken down? <span>We've got you covered</span>
+                    Broken down?
+                    <span>
+                        We've got you covered
+                        </span>
                 </h1>
 
                 <p>
@@ -41,13 +44,21 @@ function Home() {
                 <div className="hero-trust">
 
                     <div>
-                        <strong>Reliable</strong>
-                        <span>Verified mechanics</span>
+                        <strong>
+                            Reliable
+                            </strong>
+                        <span>
+                            Verified mechanics
+                            </span>
                     </div>
 
                     <div>
-                        <strong>Convenient</strong>
-                        <span>Wherever you are</span>
+                        <strong>
+                            Convenient
+                            </strong>
+                        <span>
+                            Wherever you are
+                            </span>
                     </div>
 
                     <div>

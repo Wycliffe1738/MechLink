@@ -60,9 +60,15 @@ function Notifications() {
             <div className="notification-container">
 
                 <div className="section-heading">
-                    <span>STAY UPDATED</span>
-                    <h2>Your Notifications</h2>
-                    <p>Stay informed about changes to your mechanic bookings</p>
+                    <span>
+                        STAY UPDATED
+                        </span>
+                    <h2>
+                        Your Notifications
+                        </h2>
+                    <p>
+                        Stay informed about changes to your mechanic bookings
+                        </p>
                 </div>
 
                 <form className="booking-lookup-form" onSubmit={handleSubmit}>
@@ -83,7 +89,9 @@ function Notifications() {
 
                 {searched && message && (
                     <div className="booking-lookup-empty">
-                        <h3>Invalid phone number</h3>
+                        <h3>
+                            Invalid phone number
+                            </h3>
                         <p>{message}</p>
                     </div>
                 )}
@@ -108,7 +116,9 @@ function Notifications() {
                         <div className="notification-list">
                             {notifications.length === 0 ? (
                                 <div className="empty-notifications">
-                                    <h4>No notifications yet</h4>
+                                    <h4>
+                                        No notifications yet
+                                        </h4>
                                     <p>
                                         Updates about your mechanic bookings will appear here
                                     </p>
