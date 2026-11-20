@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+
+        MechLink | Mechanical Assistance Made Easy
+    
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+
+ <div id="react-root"></div>
+
+    <main>
+
+       
+ 
+
+        
+   
+
+
+
+
+
+<section class="admin-dashboard" id="admin-dashboard">
+    <div class="admin-container">
+        <div class="section-heading">
+            <span>
+                MECHLINK MANAGEMENT
+            </span>
+            <h2>
+                Admin Dashboard
+            </h2>
+            <p>
+                Manage mechanic registrations and monitor platform activity
+            </p>
+        </div>
+
+        <div class="admin-stats">
+            <div class="admin-stat-card">
+                <span>
+                    Total Mechanics
+                </span>
+                <h3 id="adminTotalMechanics">0</h3>
+            </div>
+
+            <div class="admin-stat-card">
+                <span>
+                    Pending Applications
+                </span>
+                <h3 id="adminPendingMechanics">0</h3>
+            </div>
+
+            <div class="admin-stat-card">
+                <span>
+                    Approved Mechanics
+                </span>
+                <h3 id="adminApprovedMechanics">0</h3>
+            </div>
+
+            <div class="admin-stat-card">
+                <span>
+                    Rejected Applications
+                </span>
+                <h3 id="adminRejectedMechanics">0</h3>
+            </div>
+        </div>
+
+        <div class="admin-applications">
+            <div class="admin-heading">
+                <h3>
+                    Mechanic Applications
+                </h3>
+                <p>
+                    Review and manage mechanic registrations
+                </p>
+            </div>
+
+            <div id="adminMechanicList"></div>
+        </div>
+    </div>
+</section>
+
+
+<section class="booking-management" id="booking-management">
+    <div class="management-container">
+        <div class="section-heading">
+            <span>
+                MECHLINK BOOKINGS
+            </span>
+            <h2>
+                Manage Customer Bookings
+            </h2>
+            <p>
+                View and manage all mechanic booking requests
+            </p>
+        </div>
+
+        <div class="booking-stats">
+            <div class="booking-stat-card">
+                <span>
+                    Total Bookings
+                </span>
+                <h3 id="totalBookings">0</h3>
+            </div>
+
+            <div class="booking-stat-card">
+                <span>
+                    Pending
+                </span>
+                <h3 id="pendingBookings">0</h3>
+            </div>
+
+            <div class="booking-stat-card">
+                <span>
+                    Confirmed
+                </span>
+                <h3 id="confirmedBookings">0</h3>
+            </div>
+
+            <div class="booking-stat-card">
+                <span>
+                    Cancelled
+                </span>
+                <h3 id="cancelledBookings">0</h3>
+            </div>
+        </div>
+
+        <div class="booking-management-list">
+            <div class="management-heading">
+                <h3>
+                    Customer Booking Requests
+                </h3>
+                <p>
+                    Review booking details and update their status
+                </p>
+            </div>
+
+            <div id="adminBookingList"></div>
+        </div>
+    </div>
+</section>
+
+
+            
+
+
+<section class="request-section" id="request">
+    <div class="request-container">
+
+        <div class="request-heading">
+            <span>
+                MECHLINK RESCUE
+            </span>
+            <h2>
+                Let's get you the help you need
+            </h2>
+            <p>
+                Tell us a little about what's happening and we'll help you find the right person for the job
+            </p>
+        </div>
+
+        <form class="request-form" id="assistanceForm">
+
+            <div class="form-row">
+                <div class="form-group">
+                    <input type="text" id="customerName" placeholder="Your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="tel" id="customerPhone" placeholder="Phone number" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <select id="machineryType" required>
+                    <option value="">
+                        Select machinery type
+                    </option>
+                    <option value="Car">
+                        Car
+                    </option>
+                    <option value="Motorcycle">
+                        Motorcycle
+                    </option>
+                    <option value="Truck">
+                        Truck
+                    </option>
+                    <option value="Tractor">
+                        Tractor
+                    </option>
+                    <option value="Heavy Machinery">
+                        Heavy Machinery
+                    </option>
+                    <option value="Other">
+                        Other
+                    </option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <input type="text" id="customerLocation" placeholder="Where are you located?" required>
+            </div>
+
+            <div class="form-group">
+                <textarea id="problemDescription" rows="5" 
+                placeholder="Describe the mechanical problem" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="problemImage">
+                    Upload a picture of the problem
+                </label>
+                <input type="file" id="problemImage" accept="image/*">
+            </div>
+
+            <button type="submit" class="submit-button">
+                Find Me a Mechanic
+            </button>
+
+            <p class="form-message" id="formMessage"></p>
+
+        </form>
+
+    </div>
+</section>
+
+
+
+
+        <div class="footer-bottom">
+            <p>
+                © 2026 MechLink. All rights reserved
+            </p>
+            <a href="#home">Back to top</a>
+        </div>
+    
+  </main>
+
+
+<footer class="footer" id="contact">
+    <div class="footer-content">
+        <a href="#home" class="logo">Mech<span>Link</span></a>
+        <p>
+            Mechanical assistance made easy
+        </p>
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 MechLink. All rights reserved
+        </p>
+        <a href="#home">
+            Back to top
+        </a>
+    </div>
+</footer>
+
+<script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
